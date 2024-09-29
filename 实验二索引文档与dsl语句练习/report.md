@@ -25,7 +25,7 @@
 
 ### 1.安装分词器
 
-![分词器文件夹图片](.\images\bb23b6843c5ded9e2675c223d6cf0e8e.png)
+![分词器文件夹图片](./images/bb23b6843c5ded9e2675c223d6cf0e8e.png)
 
 ### 2.userinformation的索引、文档和高级查询&DSL语句练习
 
@@ -73,17 +73,17 @@ Put /userinformation/
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片1.png)
+![成功截图](./images/userinformation/indexfunc/图片1.png)
 
 ##### 2.1.2删除索引
 
 Delete/userinformation  
-![成功截图](.\images\userinformation\indexfunc\图片2.png)
+![成功截图](./images/userinformation/indexfunc/图片2.png)
 
 ##### 2.1.3查看索引
 
 Get/userinformation  
-![成功截图](.\images\userinformation\indexfunc\图片3.png)
+![成功截图](./images/userinformation/indexfunc/图片3.png)
 
 ##### 2.1.4修改索引
 
@@ -98,7 +98,7 @@ Put/userinformation/_mapping
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片4.png)
+![成功截图](./images/userinformation/indexfunc/图片4.png)
 
 #### 2.2文档操作
 
@@ -120,7 +120,7 @@ Post/userinformation/_doc/01
   }
   ```
 
-![成功截图](.\images\userinformation\indexfunc\图片5.png)
+![成功截图](./images/userinformation/indexfunc/图片5.png)
 
 ##### 2.2.2修改文档
 
@@ -135,7 +135,7 @@ Post/userinformation/_doc/01
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片6.png)
+![成功截图](./images/userinformation/indexfunc/图片6.png)
 
 ###### 修改文档全部内容
 
@@ -154,12 +154,12 @@ Post/userinformation/_doc/01
   }
   ```
 
-![成功截图](.\images\userinformation\indexfunc\图片7.png)
+![成功截图](./images/userinformation/indexfunc/图片7.png)
 
 ##### 2.2.3删除文档
 
 Delete/userinformation/_doc/01
-![成功截图](.\images\userinformation\indexfunc\图片8.png)
+![成功截图](./images/userinformation/indexfunc/图片8.png)
 
 ##### 2.2.4批量插入
 
@@ -215,7 +215,7 @@ Post:/userinformationmul/_bulk
 {"name": "Tina Brown","email": "tina.brown@example.com","date_of_birth": "1994-12-12","gender": "female","address": "1717 Maple Ave, Seaside, USA","phone_number":"012-345-6789","registration_date": "2024-08-10","last_login": "2024-09-18","status": "active"}
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片9.png)
+![成功截图](./images/userinformation/indexfunc/图片9.png)
 
 #### 2.3关于userinformation的10个查询
 
@@ -236,7 +236,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片10.png)
+![成功截图](./images/userinformation/indexfunc/图片10.png)
 
 ##### 2.3.2查找最后登录日期在2024年9月1日之后所有的活跃用户
 
@@ -253,7 +253,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片11.png)
+![成功截图](./images/userinformation/indexfunc/图片11.png)
 
 ##### 2.3.3查询住在“Anytown”的用户
 
@@ -267,7 +267,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片12.png)
+![成功截图](./images/userinformation/indexfunc/图片12.png)
 
 ##### 2.3.4查找出生日期在1990年之后的所有用户
 
@@ -283,7 +283,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片13.png)
+![成功截图](./images/userinformation/indexfunc/图片13.png)
 
 ##### 2.3.5查询所有状态为“inactive”的用户
 
@@ -297,7 +297,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片14.png)
+![成功截图](./images/userinformation/indexfunc/图片14.png)
 
 ##### 2.3.6查找注册日期在2023年1月1日到2023年12月31日之间的用户
 
@@ -314,7 +314,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片15.png)
+![成功截图](./images/userinformation/indexfunc/图片15.png)
 
 ##### 2.3.7查找名字为“Bob Smith”的用户的详细信息
 
@@ -335,7 +335,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片16.png)
+![成功截图](./images/userinformation/indexfunc/图片16.png)
 
 ##### 2.3.8查找电话号码以“123“开头的用户的详细信息
 
@@ -349,7 +349,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片17.png)
+![成功截图](./images/userinformation/indexfunc/图片17.png)
 
 ##### 2.3.9查询电子邮件域为“example.com”的所有用户
 
@@ -363,7 +363,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片18.png)
+![成功截图](./images/userinformation/indexfunc/图片18.png)
 
 ##### 2.3.10查找所有名字中包含“Lee”的用户
 
@@ -377,7 +377,7 @@ Post/userinformationmul/_search
 }
 ```
 
-![成功截图](.\images\userinformation\indexfunc\图片19.png "图")
+![成功截图](./images/userinformation/indexfunc/图片19.png)
 
 ### 3.products的索引、文档和高级查询&DSL语句练习
 
@@ -425,7 +425,7 @@ PUT/product_catalog
 }
 ```
 
-![成功截图](.\images\products\图片1.png)
+![成功截图](./images/products/图片1.png)
 
 ##### 3.1.2修改索引
 
@@ -440,7 +440,7 @@ Put/product_catalog/_mapping
 }
 ```
 
-![成功截图](.\images\products\图片2.png)
+![成功截图](./images/products/图片2.png)
 
 ##### 3.1.3查看索引
 
@@ -450,7 +450,7 @@ Put/product_catalog/_mapping
 get/product_catalog
 ```
 
-![成功截图](.\images\products\图片3.png)
+![成功截图](./images/products/图片3.png)
 
 ##### 3.1.4删除索引
 
@@ -458,7 +458,7 @@ get/product_catalog
 Delete/product_catalog
 ```
 
-![成功截图](.\images\products\图片4.png)
+![成功截图](./images/products/图片4.png)
 
 #### 3.2文档操作
 
@@ -480,7 +480,7 @@ Post/product_catalog/_doc/01
 }
 ```
 
-![成功截图](.\images\products\图片5.png)
+![成功截图](./images/products/图片5.png)
 
 ##### 3.2.2修改文档
 
@@ -494,7 +494,7 @@ Post/product_catalog/_doc/01
 }
 ```
 
-![成功截图](.\images\products\图片6.png)
+![成功截图](./images/products/图片6.png)
 
 ##### 3.2.3删除文档
 
@@ -502,7 +502,7 @@ Post/product_catalog/_doc/01
 Delete/product_catalog/_doc/01
 ```
 
-![成功截图](.\images\products\图片7.png "图")
+![成功截图](./images/products/图片7.png)
 
 ##### 3.2.4多组导入
 
@@ -569,7 +569,7 @@ Post/product_catalog/_bulk
 {"product_id": "P020", "name": "Electric Scooter", "description": "Eco-friendly electric scooter with long battery life.", "category": "Transportation", "price": 299.99, "stock_quantity": 50, "supplier": "EcoRide", "release_date": "2024-08-10", "tags": ["electric", "scooter", "transportation"], "rating": 4.7}
 ```
 
-![成功截图](.\images\products\图片8.png)
+![成功截图](./images/products/图片8.png)
 
 ##### 3.2.5查询文档
 
@@ -579,7 +579,7 @@ Post/product_catalog/_bulk
 Get/products/_doc/P001
 ```
 
-![成功截图](.\images\products\图片9.png)
+![成功截图](./images/products/图片9.png)
 
 ###### 全部查询
 
@@ -587,7 +587,7 @@ Get/products/_doc/P001
 Get/products/_search
 ```
 
-![成功截图](.\images\products\图片10.png)
+![成功截图](./images/products/图片10.png)
 
 #### 3.3关于产品数据的10个查询及DSL语句练习
 
@@ -608,7 +608,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片11.png)
+![成功截图](./images/products/图片11.png)
 
 ##### 3.3.2查找价格高于50美元的所有产品
 
@@ -624,7 +624,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片12.png)
+![成功截图](./images/products/图片12.png)
 
 ##### 3.3.3查询库存数量少于100的产品
 
@@ -640,7 +640,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片13.png)
+![成功截图](./images/products/图片13.png)
 
 ##### 3.3.41查找评分高于4.5的所有产品
 
@@ -656,7 +656,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片14.png)
+![成功截图](./images/products/图片14.png)
 
 ##### 3.3.5查询标签中包含"smart"的所有产品
 
@@ -670,7 +670,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片15.png)
+![成功截图](./images/products/图片15.png)
 
 ##### 3.3.6查找供应商为"TechCorp"的产品
 
@@ -684,7 +684,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片16.png)
+![成功截图](./images/products/图片16.png)
 
 ##### 3.3.7查询发布日期在2023年6月1日之后的所有产品
 
@@ -700,7 +700,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片17.png)
+![成功截图](./images/products/图片17.png)
 
 ##### 3.3.8查找描述中包含"wireless"的产品
 
@@ -714,7 +714,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片18.png)
+![成功截图](./images/products/图片18.png)
 
 ##### 3.3.9查询价格在20美元到100美元之间的所有产品
 
@@ -731,7 +731,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片19.png)
+![成功截图](./images/products/图片19.png)
 
 ##### 3.3.10查找产品名称中包含"Light"的所有产品
 
@@ -745,7 +745,7 @@ Post/products/_search
 }
 ```
 
-![成功截图](.\images\products\图片20.png)
+![成功截图](./images/products/图片20.png)
 
 ### 4.order的索引、文档和高级查询&DSL语句练习
 
@@ -793,7 +793,7 @@ Put/order_records/
 }
 ```
 
-![成功截图](.\images\order\图片1.png)
+![成功截图](./images/order/图片1.png)
 
 ##### 4.1.2修改索引
 
@@ -808,7 +808,7 @@ Put/order_records/_mapping
 }
 ```
 
-![成功截图](.\images\order\图片2.png)
+![成功截图](./images/order/图片2.png)
 
 ##### 4.1.3查看索引
 
@@ -818,7 +818,7 @@ Put/order_records/_mapping
 Get/_cat/indices?v
 ```
 
-![成功截图](.\images\order\图片3.png)
+![成功截图](./images/order/图片3.png)
 
 ###### 查看单个索引
 
@@ -826,7 +826,7 @@ Get/_cat/indices?v
 Get/order_records/
 ```
 
-![成功截图](.\images\order\图片4.png)
+![成功截图](./images/order/图片4.png)
 
 ##### 4.1.4删除索引
 
@@ -834,7 +834,7 @@ Get/order_records/
 Delete/order_records/
 ```
 
-![成功截图](.\images\order\图片5.png)
+![成功截图](./images/order/图片5.png)
 
 #### 4.2文档操作
 
@@ -867,7 +867,7 @@ Post/order_records/_doc/C001
 }
 ```
 
-![成功截图](.\images\order\图片6.png)
+![成功截图](./images/order/图片6.png)
 
 ##### 4.2.2修改文档
 
@@ -880,7 +880,7 @@ Post/order_records/_doc/C001
 }
 ```
 
-![成功代码](.\images\order\图片7.png)
+![成功代码](./images/order/图片7.png)
 
 ##### 4.2.3删除文档
 
@@ -888,7 +888,7 @@ Post/order_records/_doc/C001
 Delete/order_records/_doc/C001
 ```
 
-![成](.\images\order\图片8.png)
+![成](./images/order/图片8.png)
 
 ##### 4.2.4批量插入
 
@@ -936,7 +936,7 @@ Post/order_products/_bulk
 { "order_id": "OR020", "customer_id": "C020", "order_date": "2024-04-14", "status": "cancelled", "total_amount": 220.00, "items": [{ "product_id": "P021", "quantity": 11, "price": 20.00 }], "shipping_address": "1717 Maple Ave, Seaside, USA", "payment_method": "bank_transfer", "shipping_date": "2024-04-15", "delivery_date": "2024-04-19" }
 ```
 
-![成功代码](.\images\order\图片9.png)
+![成功代码](./images/order/图片9.png)
 
 #### 4.3关于order的查询和DSL语句练习
 
@@ -965,7 +965,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片10.png)
+![成功截图](./images/order/图片10.png)
 
 ##### 2.查找总金额大于100美元的所有订单
 
@@ -981,7 +981,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片11.png)
+![成功截图](./images/order/图片11.png)
 
 ##### 3.查询支付方式为"paypal"的订单
 
@@ -995,7 +995,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片12.png)
+![成功截图](./images/order/图片12.png)
 
 ##### 4.查找订单日期在2024年2月之后的所有订单
 
@@ -1011,7 +1011,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片13.png)
+![成功截图](./images/order/图片13.png)
 
 ##### 5.查询包含产品ID为"P001"的订单
 
@@ -1032,7 +1032,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片14.png)
+![成功截图](./images/order/图片14.png)
 
 ##### 6.查找所有状态为"cancelled"的订单的客户ID
 
@@ -1047,7 +1047,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片15.png)
+![成功截图](./images/order/图片15.png)
 
 ##### 7.查询发货日期在2024年1月15日之前的订单
 
@@ -1063,7 +1063,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片16.png)
+![成功截图](./images/order/图片16.png)
 
 ##### 8.查找使用"credit_card"支付的订单
 
@@ -1077,7 +1077,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片17.png)
+![成功截图](./images/order/图片17.png)
 
 ##### 9.查询总金额在50美元到200美元之间的所有订单 5
 
@@ -1094,7 +1094,7 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片18.png)
+![成功截图](./images/order/图片18.png)
 
 ##### 10.查找订单ID中包含"OR01"的所有订单 5
 
@@ -1108,4 +1108,4 @@ Post/order_products/_search
 }
 ```
 
-![成功截图](.\images\order\图片19.png)
+![成功截图](./images/order/图片19.png)
