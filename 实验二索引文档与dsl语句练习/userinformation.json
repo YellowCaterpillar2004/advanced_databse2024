@@ -1,0 +1,131 @@
+[
+  {
+    "mappings": {
+      "properties": {
+        "user_id": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "text"
+        },
+        "email": {
+          "type": "keyword"
+        },
+        "date_of_birth": {
+          "type": "date"
+        },
+        "gender": {
+          "type": "keyword"
+        },
+        "address": {
+          "type": "text"
+        },
+        "phone_number": {
+          "type": "keyword"
+        },
+        "registration_date": {
+          "type": "date"
+        },
+        "last_login": {
+          "type": "date"
+        },
+        "status": {
+          "type": "keyword"
+        }
+      }
+    }
+  },
+
+
+
+  {
+    "properties": {
+      "discription": {
+        "type": "text"
+      }
+    }
+  },
+
+  
+
+  {
+    "user_id": "001",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "date_of_birth": "1990-05-15",
+    "gender": "female",
+    "address": "123 Main St, Anytown, USA",
+    "phone_number": "123-456-7890",
+    "registration_date": "2023-01-15",
+    "last_login": "2024-09-01",
+    "status": "active"
+  },
+
+
+
+  {
+    "doc": {
+      "status": "inactive"
+    }
+  },
+
+  
+
+  {
+    "name": "rthgtrt",
+    "email": "alice.johnson@example.com",
+    "date_of_birth": "2000-11-30",
+    "gender": "unisex",
+    "address": "199 Main St, Anytown, USA",
+    "phone_number": "850-456-7890",
+    "registration_date": "2023-01-15",
+    "last_login": "2024-09-01",
+    "status": "active"
+  },
+
+
+
+{"index": { "_index": "userinformationmul", "_id": "001" }},
+{"name": "Alice Johnson","email": "alice.johnson@example.com","date_of_birth": "1990-05-15","gender": "female","address": "123 Main St, Anytown, USA","phone_number": "123-456-7890","registration_date": "2023-01-15","last_login": "2024-09-01","status": "active"},
+{"index": { "_index": "userinformationmul", "_id": "002" }},
+{"name": "Bob Smith","email": "bob.smith@example.com","date_of_birth": "1985-10-10","gender": "male","address": "456 Oak St, Anytown, USA","phone_number": "234-567-8901","registration_date": "2022-05-20","last_login": "2024-08-25","status": "inactive"},
+{"index": {"_index": "userinformationmul","_id": "003"}},
+{"name": "Charlie Brown","email": "charlie.brown@example.com","date_of_birth": "1992-11-30","gender": "male","address": "789 Maple Ave, Sometown, USA","phone_number": "345-678-9012","registration_date": "2023-03-10","last_login": "2024-09-05","status": "inactive"},
+{"index": {"_index": "userinformationmul","_id": "004"}},
+{"name": "David Wilson","email": "david.wilson@example.com","date_of_birth": "1988-02-14","gender": "male","address": "101 Oak St, Anycity, USA","phone_number":"456-789-0123","registration_date": "2023-04-05","last_login": "2024-08-30","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "005"}},
+{"name": "Eve Davis","email": "eve.davis@example.com","date_of_birth": "1995-07-22","gender": "female","address": "202 Pine St, Otherville, USA","phone_number":"567-890-1234","registration_date": "2023-05-18","last_login": "2024-09-02","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "006"}},
+{"name": "Frank Miller","email": "frank.miller@example.com","date_of_birth": "1991-10-05","gender": "male","address": "303 Cedar Rd, Newtown, USA","phone_number":"678-901-2345","registration_date": "2023-06-22","last_login": "2024-09-03","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "007"}},
+{"name": "Grace Lee","email": "grace.lee@example.com","date_of_birth": "1989-04-17","gender": "female","address": "404 Birch Ln, Oldtown, USA","phone_number":"789-012-3456","registration_date": "2023-07-30","last_login": "2024-09-04","status": "inactive"},
+{"index": {"_index": "userinformationmul","_id": "008"}},
+{"name": "Hannah White","email": "hannah.white@example.com","date_of_birth": "1993-12-25","gender": "female","address": "505 Spruce St, Littletown, USA","phone_number": "890-123-4567","registration_date": "2023-08-15","last_login": "2024-09-06","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "009"}},
+{"name": "Ivy Green","email": "ivy.green@example.com","date_of_birth": "1994-03-03","gender": "female","address": "606 Willow Ave, Bigcity, USA","phone_number":"901-234-5678","registration_date": "2023-09-01","last_login": "2024-09-07","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "010"}},
+{"name": "Jack Black","email": "jack.black@example.com","date_of_birth": "1987-06-18","gender": "male","address": "707 Poplar Dr, Smalltown, USA","phone_number":"012-345-6789","registration_date": "2023-10-10","last_login": "2024-09-08","status": "inactive"},
+{"index": {"_index": "userinformationmul","_id": "011"}},
+{"name": "Karen Adams","email": "karen.adams@example.com","date_of_birth": "1990-09-21","gender": "female","address": "808 Chestnut Blvd, Metropolis, USA","phone_number": "123-456-7890","registration_date": "2023-11-25","last_login": "2024-09-09","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "012"}},
+{"name": "Leo King","email": "leo.king@example.com","date_of_birth": "1986-01-12","gender": "male","address": "909 Ash Ct, Villagetown, USA","phone_number":"234-567-8901","registration_date": "2023-12-05","last_login": "2024-09-10","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "013"}},
+{"name": "Mia Moore","email": "mia.moore@example.com","date_of_birth": "1992-02-28","gender": "female","address": "1010 Fir Ln, Hamlet, USA","phone_number":"345-678-9012","registration_date": "2024-01-10","last_login": "2024-09-11","status": "inactive"},
+{"index": {"_index": "userinformationmul","_id": "014"}},
+{"name": "Nina Scott","email": "nina.scott@example.com","date_of_birth": "1988-05-05","gender": "female","address": "1111 Cypress St, Township, USA","phone_number":"456-789-0123","registration_date":"2024-02-14","last_login": "2024-09-12","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "015"}}, 
+{"name": "Oscar Turner","email": "oscar.turner@example.com","date_of_birth": "1991-07-19","gender": "male","address": "1212 Redwood Rd, Cityville, USA","phone_number": "567-890-1234","registration_date": "2024-03-20","last_login": "2024-09-13","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "016"}}, 
+{"name": "Paul Walker","email": "paul.walker@example.com","date_of_birth": "1989-10-10","gender": "male","address": "1313 Cherry Ave, Urbantown, USA","phone_number": "678-901-2345","registration_date": "2024-04-25","last_login": "2024-09-14","status": "inactive"},
+{"index": {"_index": "userinformationmul","_id": "017"}},
+{"name": "Quinn Hughes","email": "quinn.hughes@example.com","date_of_birth": "1993-11-11","gender": "male","address": "1414 Beech St, Suburbia, USA","phone_number":"789-012-3456","registration_date": "2024-05-30","last_login": "2024-09-15","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "018"}},
+{"name": "Rose Hall","email": "rose.hall@example.com","date_of_birth": "1990-03-22","gender": "female","address": "1515 Palm Dr, Downtown, USA","phone_number":"890-123-4567","registration_date": "2024-06-15","last_login": "2024-09-16","status": "active"},
+{"index": {"_index": "userinformationmul","_id": "019"}},
+{"name": "Steve Young","email": "steve.young@example.com","date_of_birth": "1987-09-09","gender": "male","address": "1616 Pine St, Uptown, USA","phone_number":"901-234-5678","registration_date": "2024-07-20","last_login": "2024-09-17","status": "inactive"},
+{"index": {"_index": "userinformationmul","_id": "019"}}, 
+{"name": "Tina Brown","email": "tina.brown@example.com","date_of_birth": "1994-12-12","gender": "female","address": "1717 Maple Ave, Seaside, USA","phone_number":"012-345-6789","registration_date": "2024-08-10","last_login": "2024-09-18","status": "active"}
+
+
+]
+
