@@ -1,0 +1,130 @@
+[
+    {
+        "mappings":{
+            "properties":{
+                "order_id":{
+                    "type":"keyword"
+                },
+                 "customer_id":{
+                    "type":"keyword"
+                },
+                "order_date":{
+                    "type":"date"
+                },
+                "status":{
+                    "type":"keyword"
+                },
+                "total_amount":{
+                    "type":"double"
+                },
+                "items":{
+                    "type":"nested"
+                },
+                "shipping_address":{
+                    "type":"text"
+                },
+                "payment_method":{
+                    "type":"keyword"
+                },
+                "shipping_date":{
+                    "type":"date"
+                },
+                "delivery_date":{
+                    "type":"date"
+                }
+            }
+        }
+    },
+
+
+
+    {
+        "properties":{
+            "description":{
+                "type":"text"
+            }
+        }
+    },
+
+
+
+    {
+        "order_id": "OR001",
+        "customer_id": "C001",
+        "order_date": "2024-01-10",
+        "status": "completed",
+        "total_amount": 150.75,
+        "items": [
+            {
+                "product_id": "P001",
+                "quantity": 2,
+                "price": 50.00
+            },
+            {
+                "product_id": "P002",
+                "quantity": 1,
+                "price": 50.75
+            }
+        ],
+        "shipping_address": "123 Main St, Anytown, USA",
+        "payment_method": "credit_card",
+        "shipping_date": "2024-01-11",
+        "delivery_date": "2024-01-15"
+    },
+
+
+
+    {
+        "doc":{
+            "status":"hahahahhaa"
+        }
+    },
+    
+
+
+
+{ "index" : { "_index" : "order_products", "_id" : "OR001" } },
+{ "order_id": "OR001", "customer_id": "C001", "order_date": "2024-01-10", "status": "completed", "total_amount": 150.75, "items": [{ "product_id": "P001", "quantity": 2, "price": 50.00 }, { "product_id": "P002", "quantity": 1, "price": 50.75 }], "shipping_address": "123 Main St, Anytown, USA", "payment_method": "credit_card", "shipping_date": "2024-01-11", "delivery_date": "2024-01-15" },
+{ "index" : { "_index" : "order_products", "_id" : "OR002" } },
+{ "order_id": "OR002", "customer_id": "C002", "order_date": "2024-01-15", "status": "pending", "total_amount": 89.99, "items": [{ "product_id": "P003", "quantity": 1, "price": 89.99 }], "shipping_address": "456 Elm St, Othertown, USA", "payment_method": "paypal", "shipping_date": "2024-01-16", "delivery_date": "2024-01-20" },
+{ "index" : { "_index" : "order_products", "_id" : "OR003" } },
+{ "order_id": "OR003", "customer_id": "C003", "order_date": "2024-01-20", "status": "shipped", "total_amount": 120.50, "items": [{ "product_id": "P004", "quantity": 3, "price": 40.00 }], "shipping_address": "789 Maple Ave, Sometown, USA", "payment_method": "debit_card", "shipping_date": "2024-01-21", "delivery_date": "2024-01-25" },
+{ "index" : { "_index" : "order_products", "_id" : "OR004" } },
+{ "order_id": "OR004", "customer_id": "C004", "order_date": "2024-01-25", "status": "completed", "total_amount": 75.00, "items": [{ "product_id": "P005", "quantity": 5, "price": 15.00 }], "shipping_address": "101 Oak St, Anycity, USA", "payment_method": "credit_card", "shipping_date": "2024-01-26", "delivery_date": "2024-01-30" },
+{ "index" : { "_index" : "order_products", "_id" : "OR005" } },
+{ "order_id": "OR005", "customer_id": "C005", "order_date": "2024-02-01", "status": "cancelled", "total_amount": 200.00, "items": [{ "product_id": "P006", "quantity": 2, "price": 100.00 }], "shipping_address": "202 Pine St, Otherville, USA", "payment_method": "bank_transfer", "shipping_date": "2024-02-02", "delivery_date": "2024-02-06" },
+{ "index" : { "_index" : "order_products", "_id" : "OR006" } },
+{ "order_id": "OR006", "customer_id": "C006", "order_date": "2024-02-05", "status": "completed", "total_amount": 300.25, "items": [{ "product_id": "P007", "quantity": 1, "price": 300.25 }], "shipping_address": "303 Cedar Rd, Newtown, USA", "payment_method": "credit_card", "shipping_date": "2024-02-06", "delivery_date": "2024-02-10" },
+{ "index" : { "_index" : "order_products", "_id" : "OR007" } },       
+{ "order_id": "OR007", "customer_id": "C007", "order_date": "2024-02-10", "status": "pending", "total_amount": 45.99, "items": [{ "product_id": "P008", "quantity": 3, "price": 15.33 }], "shipping_address": "404 Birch Ln, Oldtown, USA", "payment_method": "paypal", "shipping_date": "2024-02-11", "delivery_date": "2024-02-15" },
+{ "index" : { "_index" : "order_products", "_id" : "OR008" } },       
+{ "order_id": "OR008", "customer_id": "C008", "order_date": "2024-02-15", "status": "shipped", "total_amount": 89.50, "items": [{ "product_id": "P009", "quantity": 2, "price": 44.75 }], "shipping_address": "505 Spruce St, Littletown, USA", "payment_method": "debit_card", "shipping_date": "2024-02-16", "delivery_date": "2024-02-20" },
+{ "index" : { "_index" : "order_products", "_id" : "OR009" } },       
+{ "order_id": "OR009", "customer_id": "C009", "order_date": "2024-02-20", "status": "completed", "total_amount": 60.00, "items": [{ "product_id": "P010", "quantity": 4, "price": 15.00 }], "shipping_address": "606 Willow Ave, Bigcity, USA", "payment_method": "credit_card", "shipping_date": "2024-02-21", "delivery_date": "2024-02-25" },
+{ "index" : { "_index" : "order_products", "_id" : "OR010" } },       
+{ "order_id": "OR010", "customer_id": "C010", "order_date": "2024-02-25", "status": "cancelled", "total_amount": 150.00, "items": [{ "product_id": "P011", "quantity": 10, "price": 15.00 }], "shipping_address": "707 Poplar Dr, Smalltown, USA", "payment_method": "bank_transfer", "shipping_date": "2024-02-26", "delivery_date": "2024-03-01" },
+{ "index" : { "_index" : "order_products", "_id" : "OR011" } },       
+{ "order_id": "OR011", "customer_id": "C011", "order_date": "2024-03-01", "status": "completed", "total_amount": 110.00, "items": [{ "product_id": "P012", "quantity": 2, "price": 55.00 }], "shipping_address": "808 Chestnut Blvd, Metropolis, USA", "payment_method": "credit_card", "shipping_date": "2024-03-02", "delivery_date": "2024-03-06" },
+{ "index" : { "_index" : "order_products", "_id" : "OR012" } },       
+{ "order_id": "OR012", "customer_id": "C012", "order_date": "2024-03-05", "status": "pending", "total_amount": 75.99, "items": [{ "product_id": "P013", "quantity": 3, "price": 25.33 }], "shipping_address": "909 Ash Ct, Villagetown, USA", "payment_method": "paypal", "shipping_date": "2024-03-06", "delivery_date": "2024-03-10" },
+{ "index" : { "_index" : "order_products", "_id" : "OR013" } },       
+{ "order_id": "OR013", "customer_id": "C013", "order_date": "2024-03-10", "status": "shipped", "total_amount": 200.00, "items": [{ "product_id": "P014", "quantity": 4, "price": 50.00 }], "shipping_address": "1010 Fir Ln, Hamlet, USA", "payment_method": "debit_card", "shipping_date": "2024-03-11", "delivery_date": "2024-03-15" },
+{ "index" : { "_index" : "order_products", "_id" : "OR014" } },       
+{ "order_id": "OR014", "customer_id": "C014", "order_date": "2024-03-15", "status": "completed", "total_amount": 90.00, "items": [{ "product_id": "P015", "quantity": 6, "price": 15.00 }], "shipping_address": "1111 Cypress St, Township, USA", "payment_method": "credit_card", "shipping_date": "2024-03-16", "delivery_date": "2024-03-20" },
+{ "index" : { "_index" : "order_products", "_id" : "OR015" } },       
+{ "order_id": "OR015", "customer_id": "C015", "order_date": "2024-03-20", "status": "cancelled", "total_amount": 135.00, "items": [{ "product_id": "P016", "quantity": 9, "price": 15.00 }], "shipping_address": "1212 Redwood Rd, Cityville, USA", "payment_method": "bank_transfer", "shipping_date": "2024-03-21", "delivery_date": "2024-03-25" },
+{ "index" : { "_index" : "order_products", "_id" : "OR016" } },       
+{ "order_id": "OR016", "customer_id": "C016", "order_date": "2024-03-25", "status": "completed", "total_amount": 250.00, "items": [{ "product_id": "P017", "quantity": 5, "price": 50.00 }], "shipping_address": "1313 Cherry Ave, Urbantown, USA", "payment_method": "credit_card", "shipping_date": "2024-03-26", "delivery_date": "2024-03-30" },
+{ "index" : { "_index" : "order_products", "_id" : "OR017" } },       
+{ "order_id": "OR017", "customer_id": "C017", "order_date": "2024-03-30", "status": "pending", "total_amount": 60.00, "items": [{ "product_id": "P018", "quantity": 2, "price": 30.00 }], "shipping_address": "1414 Beech St, Suburbia, USA", "payment_method": "paypal", "shipping_date": "2024-03-31", "delivery_date": "2024-04-04" },
+{ "index" : { "_index" : "order_products", "_id" : "OR018" } },       
+{ "order_id": "OR018", "customer_id": "C018", "order_date": "2024-04-04", "status": "shipped", "total_amount": 100.00, "items": [{ "product_id": "P019", "quantity": 4, "price": 25.00 }], "shipping_address": "1515 Palm Dr, Downtown, USA", "payment_method": "debit_card", "shipping_date": "2024-04-05", "delivery_date": "2024-04-09" },
+{ "index" : { "_index" : "order_products", "_id" : "OR019" } },       
+{ "order_id": "OR019", "customer_id": "C019", "order_date": "2024-04-09", "status": "completed", "total_amount": 180.00, "items": [{ "product_id": "P020", "quantity": 6, "price": 30.00 }], "shipping_address": "1616 Pine St, Uptown, USA", "payment_method": "credit_card", "shipping_date": "2024-04-10", "delivery_date": "2024-04-14" },
+{ "index" : { "_index" : "order_products", "_id" : "OR020" } },       
+{ "order_id": "OR020", "customer_id": "C020", "order_date": "2024-04-14", "status": "cancelled", "total_amount": 220.00, "items": [{ "product_id": "P021", "quantity": 11, "price": 20.00 }], "shipping_address": "1717 Maple Ave, Seaside, USA", "payment_method": "bank_transfer", "shipping_date": "2024-04-15", "delivery_date": "2024-04-19" }
+
+    
+    
+    
+]
